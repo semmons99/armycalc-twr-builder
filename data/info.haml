@@ -1,0 +1,31 @@
+!!! XML
+%ruleset{ :xmlns => "armycalc",
+          "xmlns:xsi" => "http://www.w3.org/2001/XMLSchema-instance",
+          "xsi:schemaLocation" => "armycalc http://armycalc.com/xmls/twr2info.xsd",
+          :version => "2.0" }
+  %uid WH40K-5E-#{cfg['name'].gsub(/ /, '-')}
+  %revision 1
+  %name WH40K-5E-#{cfg['name'].gsub(/ /, '-')}
+  %author= cfg['author'] || 'Unknown'
+  %description #{cfg['name']} Army Data
+  %defaultArmyName= cfg['defaultArmyName'] || 'My Army'
+  %defaultArmySize 1500
+  %displayFields
+    - attrs.each do |attr|
+      %field
+        %name= attr
+        %default 0
+  %files
+    %units
+      %file
+        %name Units
+        %path units.xml
+    %validators
+      %file
+        %name Validator
+        %path validator.lua
+    %displays
+      %file
+        %name Display
+        %path display.lua
+    %media media

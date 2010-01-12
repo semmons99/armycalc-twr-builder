@@ -1,0 +1,21 @@
+!!! XML
+%units{ :xmlns => "armycalc",
+        "xmlns:xsi" => "http://www.w3.org/2001/XMLSchema-instance",
+        "xsi:schemaLocation" => "armycalc http://armycalc.com/xmls/twr2units.xsd",
+        :version => "2.0" }
+  - units.each do |unit|
+    %unit{ :minCount => unit['min'], :maxCount => unit['max'] }
+      %uid= "WH40K-5E-#{cfg['name']}-#{unit['name']}".gsub(/ /, '-')
+      %name= unit['name']
+      %description= unit['description']
+      %categories
+        %category= unit['category']
+      %extraFields
+        %display= unit['name']
+        - attrs.each do |attr|
+          - next unless unit[attr]
+          %field
+            %name= attr
+            %value= unit[attr]
+      %baseCost 0
+      %costPerUnit= unit['cost']
