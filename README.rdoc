@@ -1,0 +1,10 @@
+= Introduction
+
+This library is used to build Warhammer 40K [5E] TWR files for use with
+ArmyCalc
+
+== Resources
+
+- ArmyCalc website: http://www.armycalc.com
+- Project website: http://semmons99.github.com/WH40K-5E-TWR
+- Git repository: http://github.com/semmons99/WH40K-5E-TWR/tree/master
