@@ -27,9 +27,11 @@ xml  = Haml::Engine.new(haml).render(Object.new,
 File.open(File.join(TMP_DIR, "info.xml"), "w").write(xml)
 
 # create units.xml
-units = CSV.read(File.join(CFG_DIR, cfg["units"]), :headers => true)
+units   = CSV.read(File.join(CFG_DIR, cfg["units"]), :headers => true)
+bonuses = CSV.read(File.join(CFG_DIR, cfg["bonuses"]), :headers => true)
 haml = File.open(File.join(DATA_DIR, "units.haml")).read
 xml  = Haml::Engine.new(haml).render(Object.new,
                                      :cfg => cfg,
-                                     :units => units)
+                                     :units => units,
+                                     :bonuses => bonuses)
 File.open(File.join(TMP_DIR, "units.xml"), "w").write(xml)

@@ -1,0 +1,7 @@
+name,description,min,max,baseCost,costPer,owner,WS,BS,S,T,W,I,A,LD,SV,FA,SA,RA
+Power Sword,none,0,1,10,0,Blood Claw Pack,,,,,,,,,,,
+Rhino Transport,none,0,1,30,0,Blood Claw Pack,4,,,,,,,,,11,11,10
+Dedicated Transport,none,0,1,0,0,Blood Claw Pack,,,,,,,,,,,
+Rhino,none,0,1,30,0,Blood Claw Pack/Dedicated Transport,4,,,,,,,,,11,11,10
+Drop Pod,none,0,1,30,0,Blood Claw Pack/Dedicated Transport,4,,,,,,,,,10,10,10
+Razorback,none,0,1,30,0,Blood Claw Pack/Dedicated Transport,4,,,,,,,,,13,11,10

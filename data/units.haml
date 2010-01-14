@@ -5,7 +5,7 @@
         :version => "2.0" }
   - units.each do |unit|
     %unit{ :minCount => unit['min'], :maxCount => unit['max'] }
-      %uid= "#{cfg['ruleset'].gsub(/ /, '-')}-#{cfg['name']}-#{unit['name']}".gsub(/ /, '-')
+      %uid= "#{cfg['ruleset']}-#{cfg['name']}-#{unit['name']}".gsub(/ /, '-')
       %name= unit['name']
       %description= unit['description']
       %categories
@@ -17,5 +17,40 @@
           %field
             %name= attr
             %value= unit[attr]
-      %baseCost 0
-      %costPerUnit= unit['cost']
+      %baseCost= unit['baseCost']
+      %costPerUnit= unit['costPer']
+      - bonuses.select{|o| o['owner'] == unit['name']}.each do |bonus|
+        %bonus{ :minCount => bonus['min'], :maxCount => bonus['max'] }
+          %uid= "#{cfg['ruleset']}-#{cfg['name']}-#{unit['name']}-#{bonus['name']}".gsub(/ /, '-')
+          %name= bonus['name']
+          %description= bonus['description']
+          %baseCost= bonus['baseCost']
+          %costPerUnit= bonus['costPer']
+          - if cfg['attrs'].split(' ').map{|a| bonus[a]}.reject{|o| o.nil?}.length > 0
+            %extraFields
+              %display= bonus['name']
+              - cfg['attrs'].split(' ').each do |attr|
+                - next unless bonus[attr]
+                %field
+                  %name= attr
+                  %value= bonus[attr]
+          - if bonuses.select{|o| o['owner'] == "#{unit['name']}/#{bonus['name']}"}.length > 0
+            %bonuses{ :minCount => bonus['max'], :maxCount => bonus['max'], :uid => "#{cfg['ruleset']}-#{cfg['name']}-#{unit['name']}-#{bonus['name']}-childern".gsub(/ /, '-') }
+              %uid= "#{cfg['ruleset']}-#{cfg['name']}-#{unit['name']}-#{bonus['name']}-childern".gsub(/ /, '-')
+              %name= ""
+              - bonuses.select{|o| o['owner'] == "#{unit['name']}/#{bonus['name']}"}.each do |child|
+                %bonus{ :minCount => child['min'], :maxCount => child['max'] }
+                  %uid= "#{cfg['ruleset']}-#{cfg['name']}-#{unit['name']}-#{bonus['name']}-#{child['name']}".gsub(/ /, '-')
+                  %name= child['name']
+                  %description= child['description']
+                  %baseCost= child['baseCost']
+                  %costPerUnit= child['costPer']
+                  - if cfg['attrs'].split(' ').map{|a| child[a]}.reject{|o| o.nil?}.length > 0
+                    %extraFields
+                    %display= child['name']
+                    - cfg['attrs'].split(' ').each do |attr|
+                      - next unless child[attr]
+                      %field
+                        %name= attr
+                        %value= child[attr]
+

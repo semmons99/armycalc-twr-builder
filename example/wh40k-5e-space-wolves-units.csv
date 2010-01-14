@@ -1,3 +1,3 @@
-name,description,category,min,max,cost,WS,BS,S,T,W,I,A,LD,SV,FA,SA,RA
-Blood Claw Pack,none,Troops,5,15,15,3,3,4,4,1,4,1,8,3+,,,
-Grey Hunter Pack,none,Troops,5,10,15,4,4,4,4,1,4,1,8,3+,,,
+name,description,category,min,max,baseCost,costPer,WS,BS,S,T,W,I,A,LD,SV,FA,SA,RA
+Blood Claw Pack,none,Troops,5,15,0,15,3,3,4,4,1,4,1,8,3+,,,
+Grey Hunter Pack,none,Troops,5,10,0,15,4,4,4,4,1,4,1,8,3+,,,

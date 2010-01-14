@@ -4,4 +4,5 @@ name: Space Wolves
 author: Shane Emmons (semmons99@gmail.com)
 defaultArmyName: The Sons of Russ
 units: wh40k-5e-space-wolves-units.csv
+bonuses: wh40k-5e-space-wolves-bonuses.csv
 attrs: WS BS S T W I A LD SV FA SA RA
