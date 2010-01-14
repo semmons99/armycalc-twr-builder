@@ -15,7 +15,6 @@ DATA_DIR = File.expand_path(File.dirname(__FILE__) + "/../data")
 TMP_DIR  = File.expand_path(File.dirname(__FILE__) + "/../tmp")
 CFG_FILE = File.expand_path(ARGV[0])
 CFG_DIR  = File.dirname(CFG_FILE)
-ATTRS    = %w( WS BS S T W I A LD SV FA SA RA )
 Dir.mkdir(TMP_DIR)
 
 # read config file
@@ -24,8 +23,7 @@ cfg = YAML::load_file(CFG_FILE)
 # create info.xml
 haml = File.open(File.join(DATA_DIR, "info.haml")).read
 xml  = Haml::Engine.new(haml).render(Object.new,
-                                     :cfg => cfg,
-                                     :attrs => ATTRS)
+                                     :cfg => cfg)
 File.open(File.join(TMP_DIR, "info.xml"), "w").write(xml)
 
 # create units.xml
@@ -33,6 +31,5 @@ units = CSV.read(File.join(CFG_DIR, cfg["units"]), :headers => true)
 haml = File.open(File.join(DATA_DIR, "units.haml")).read
 xml  = Haml::Engine.new(haml).render(Object.new,
                                      :cfg => cfg,
-                                     :attrs => ATTRS,
                                      :units => units)
 File.open(File.join(TMP_DIR, "units.xml"), "w").write(xml)

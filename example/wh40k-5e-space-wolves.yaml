@@ -1,5 +1,7 @@
 ---
+ruleset: WH40K-5E
 name: Space Wolves
 author: Shane Emmons (semmons99@gmail.com)
 defaultArmyName: The Sons of Russ
-units: units.csv
+units: wh40k-5e-space-wolves-units.csv
+attrs: WS BS S T W I A LD SV FA SA RA

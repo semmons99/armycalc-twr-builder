@@ -12,5 +12,5 @@ end
 desc "Build twr file. Usage: rake build CONFIG="
 task :build => [:clobber, :generate] do
   raise "CONFIG= is required" unless ENV.include?("CONFIG")
-  sh "ruby script/build.rb"
+  sh "ruby script/build.rb #{ENV["CONFIG"]}"
 end

@@ -5,14 +5,14 @@
         :version => "2.0" }
   - units.each do |unit|
     %unit{ :minCount => unit['min'], :maxCount => unit['max'] }
-      %uid= "WH40K-5E-#{cfg['name']}-#{unit['name']}".gsub(/ /, '-')
+      %uid= "#{cfg['ruleset'].gsub(/ /, '-')}-#{cfg['name']}-#{unit['name']}".gsub(/ /, '-')
       %name= unit['name']
       %description= unit['description']
       %categories
         %category= unit['category']
       %extraFields
         %display= unit['name']
-        - attrs.each do |attr|
+        - cfg['attrs'].split(' ').each do |attr|
           - next unless unit[attr]
           %field
             %name= attr
