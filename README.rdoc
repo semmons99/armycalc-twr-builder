@@ -2,6 +2,101 @@
 
 This library is used to build TWR files for use with ArmyCalc
 
+== Usage
+
+There are two 'rake' commands you can use
+ rake generate config=
+ rake build config=
+
+The first creates the necessary XML files based on the data provided in the
+specified config file.
+
+The second runs generate and then packs the resulting files into a TWR file.
+
+The following commands can be used to cleanup generated files.
+ rake clean
+ rake clobber
+
+== Config File Layout
+
+The config file is a standard YAML file; below is an example.
+
+ ---
+ ruleset: Sample Ruleset
+ name: Sample Army
+ author: Shane Emmons (semmons99@gmail.com)
+ defaultArmyName: My Army
+ units: units.csv
+ bonuses: bonuses.csv
+ attrs: dexterity strength agility life
+
+'ruleset' is the unique name of your rule system. Example 'WH40K 5E' 'WFB 7E'
+
+'name' is the name of the army. Examples 'Space Wolves' 'Dwarves'
+
+'author' is optional.
+
+'defaultArmyName' is optional. Examples 'The Sons of Russ' 'Spudz Crew'
+
+'units' is the name and relative location of the units CSV.
+
+'bonuses' is the name and relative location of the bonuses CSV.
+
+'attrs' are the valid attributes a unit can have (space separated). Examples
+"WS BS S T W I A LD SV FA SA RA". This should be mirrored in the CSVs.
+
+== CSV Layout
+
+=== Units CSV
+
+The following columns are required in the units CSV. You also need to include
+'attrs' from the config file.
+
+ name,description,category,min,max,baseCost,costPer
+
+'name' is the unique name of the unit. Examples 'Blood Claw Pack' 'Cannon'
+
+'description' is the unit description.
+
+'category' is the category of the unit. Examples 'Troop' 'Core' 'Hero'
+
+'min' is the minimum number allowed when a unit is taken.
+
+'max' is the maximum number allowed when a unit is taken.
+
+'baseCost' is the base cost of the unit when taken if applicable.
+
+'costPer' is the cost per model when the unit is taken if applicable.
+
+'attrs' can be left blank when they do not apply to a unit.
+
+=== Bonuses CSV
+
+The following columns are required in the bonuses CSV. You also need to include
+'attrs' from the config file.
+
+ name,description,min,max,baseCost,costPer,owner
+
+'name' is the name of your bonus and needs to be unique for the owner only.
+Examples 'Power Sword' 'Amulet of Power'
+
+'description' is the bonus description.
+
+'min' is the minimum number allowed when a bonus is taken.
+
+'max' is the maximum number allowed when a bonus is taken.
+
+'baseCost' is the base cost of the unit when taken if applicable.
+
+'costPer' is the cost per model when the unit is taken if applicable.
+
+'owner' is the owner of the bonus. There are two possibilities here, the bonus
+can either be owned by unit, in which place the owner is the name of the unit.
+The other possibility is the bonus is owned by another bonus, in which case the
+owner is "unit name/bonus name" for example "Blood Claw Pack/Transport".
+
+'attrs' can be left blank when they do not apply to a bonus.
+
 == Resources
 
 - ArmyCalc website: http://www.armycalc.com
