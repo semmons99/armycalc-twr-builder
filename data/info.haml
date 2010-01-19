@@ -3,9 +3,9 @@
           "xmlns:xsi" => "http://www.w3.org/2001/XMLSchema-instance",
           "xsi:schemaLocation" => "armycalc http://armycalc.com/xmls/twr2info.xsd",
           :version => "2.0" }
-  %uid #{cfg['ruleset'].gsub(/ /, '-')}-#{cfg['name'].gsub(/ /, '-')}
+  %uid= "#{cfg['ruleset']}-#{cfg['name']}".gsub(/ /, '-').downcase
   %revision 1
-  %name #{cfg['ruleset'].gsub(/ /, '-')}-#{cfg['name'].gsub(/ /, '-')}
+  %name #{cfg['ruleset']} #{cfg['name']}
   %author= cfg['author'] || 'Unknown'
   %description #{cfg['name']} Army Data
   %defaultArmyName= cfg['defaultArmyName'] || 'My Army'
