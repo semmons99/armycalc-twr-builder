@@ -1,3 +1,39 @@
 name,description,category,min,max,baseCost,costPer,WS,BS,S,T,W,I,A,LD,SV,FA,SA,RA
-Blood Claw Pack,none,Troops,5,15,0,15,3,3,4,4,1,4,1,8,3+,,,
-Grey Hunter Pack,none,Troops,5,10,0,15,4,4,4,4,1,4,1,8,3+,,,
+Arjac Rockfist,,Elite,1,1,170,0,5,5,5,4,2,4,3,9,2+,,,
+Blood Claw,,Troop,5,15,0,15,3,3,4,4,1,4,1,8,3+,,,
+Canis Wolfborn,,HQ,1,1,185,0,5,2,5,5,3,5,5,8,3+,,,
+Cyberwolf,reference only,Elite,1,1,0,0,4,0,4,5,1,4,3,6,4+,,,
+Fenrisian Wolf,,Fast Attack,5,15,0,8,4,0,4,4,1,4,2,5,6+,,,
+Grey Hunter,,Troop,5,10,0,15,4,4,4,4,1,4,1,8,3+,,,
+Iron Priest,,Elite,1,1,50,0,4,4,4,4,1,4,2,8,2+,,,
+Logan Grimnar,,HQ,1,1,275,0,6,5,4,4,3,5,5,10,2+,,,
+Lone Wolf,,Elite,1,1,20,0,5,4,4,4,2,4,2,8,3+,,,
+Long Fang,,Heavy Support,2,6,0,15,4,4,4,4,1,4,1(2),9,3+,,,
+Lukas the Trickster,,Troop,1,1,140,0,5,5,4,4,2,5,3,8,3+,,,
+Njal Stormcaller,,HQ,1,1,245,0,5,4,4,4,2,4,3,10,2+,,,
+Ragnar Blackmane,,HQ,1,1,240,0,6,5,4,4,3,5,4,10,3+,,,
+Rune Priest,,HQ,1,1,100,0,5,4,4,4,2,4,2,10,3+,,,
+Skyclaw,,Fast,5,10,0,18,3,3,4,4,1,4,1,8,3+,,,
+Swiftclaw Biker,,Fast,3,10,0,25,3,3,4,4(5),1,4,1,8,3+,,,
+Swiftclaw Attack Bike,reference only,Fast,1,1,0,0,3,3,4,4(5),2,4,2,8,3+,,,
+Thrall-Servitor,reference only,Elite,1,1,0,0,3,3,3,3,1,3,1,8,4+,,,
+Thunderwolf Cavalry,,Fast,1,5,0,50,4,4,5,5,2,4,4,8,3+,,,
+Ulrik the Slayer,,HQ,1,1,180,0,6,5,4,4,2,5,3,10,3+,,,
+Wolf Guard,,Elite,3,10,0,18,4,4,4,4,1,4,2,9,3+,,,
+Wolf Guard Battle Leader,,HQ,1,1,70,0,5,5,4,4,2,5,3,9,3+,,,
+Wolf Lord,,HQ,1,1,100,0,6,5,4,4,3,5,4,10,3+,,,
+Wolf Priest,,HQ,1,1,100,0,5,4,4,4,2,4,2,10,3+,,,
+Wolf Scout,,Elite,5,10,0,15,4,4,4,4,1,4,1,8,4+,,,
+Drop Pod,reference only,Dedicated Transport,1,1,0,0,,4,,,,,,,,12,12,12
+Land Raider,,Heavy Support,1,1,250,0,,4,,,,,,,,14,14,14
+Land Raider Crusader,,Heavy Support,1,1,250,0,,4,,,,,,,,14,14,14
+Land Raider Redeemer,,Heavy Support,1,1,240,0,,4,,,,,,,,14,14,14
+Land Speeder,,Fast Attack,1,3,0,50,,4,,,,,,,,10,10,10
+Predator,,Heavy Support,1,1,60,0,,4,,,,,,,,13,11,10
+Razorback,reference only,Dedicated Transport,1,1,0,0,,4,,,,,,,,11,11,10
+Rhino,reference only,Dedicated Transport,1,1,0,0,,4,,,,,,,,11,11,10
+Vindicator,,Heavy Support,1,1,115,0,,4,,,,,,,,13,11,10
+Whirlwind,,Heavy Support,1,1,85,0,,4,,,,,,,,11,11,10
+Dreadnaught,,Elite,1,1,105,0,4,4,6,,,4,2,,,12,12,10
+Venerable Dreadnaught,,Elite,1,1,165,0,5,5,6,,,4,2,,,12,12,10
+Bjorn the Fell-Handed,,HQ,1,1,270,0,6,6,7,,,3,4,,,13,12,10
