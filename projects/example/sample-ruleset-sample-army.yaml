@@ -1,0 +1,8 @@
+ruleset: Sample Ruleset
+name: Sample Army
+author: U R Namehere (you@example.com)
+defaultArmyName: My Army
+units: sample-army-units.csv
+bonuses: sample-army-bonuses.csv
+attrs: dexterity strength agility life
+media: media

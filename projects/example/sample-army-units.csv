@@ -1,0 +1,3 @@
+"name","description","category","min","max","baseCost","costPer","thumbnail","dexterity","strength","agility","life","field1","field2"
+"Example Character",,"Characters",0,1,20,,,4,4,4,4,"A","B"
+"Example Unit",,"Units",5,10,,5,,2,2,2,2,"C","D"

@@ -1,0 +1,3 @@
+"name","description","min","max","baseCost","costPer","owner","dexterity","strength","agility","life","field1","field2"
+"Stuff for Character",,0,1,50,,"Example Character",1,1,2,5,"E","F"
+"Unit Equipment",,0,1,,2,"Example Unit",,,,2,"G","H"

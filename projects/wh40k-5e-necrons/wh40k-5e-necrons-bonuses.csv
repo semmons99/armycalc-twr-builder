@@ -1,0 +1,28 @@
+"name","description","min","max","baseCost","costPer","owner","WS","BS","S","T","W","I","A","LD","SV","FA","SA","RA","range","St","AP","Type"
+"Staff of Light","Power Weapon, Codex p.14",0,1,,,"Necron Lord",,,,,,,,,,,,,12,5,3,"Assault 3"
+"Warscythe","Replaces Staff of Light, No Saving throw, AP 2D6 + S vs. vehicles, Codex p.14",0,1,10,,"Necron Lord",,,,,,,,,,,,,,,,
+"Chronometron","Roll extra D6, discard lowest for sweeping advance and fall back, Codex p.14",0,1,10,,"Necron Lord",,,,,,,,,,,,,,,,
+"Disruption Field","Any hit while assaulting a vehicle will glance on 6 regardless of armor, Codex p.14",0,1,5,,"Necron Lord",,,,,,,,,,,,,,,,
+"Destroyer Body","+1T, Jet Bike, Codex p.14",0,1,30,,"Necron Lord",,,,1,,,,,,,,,,,,
+"Gaze of Flame","Assaulting units lose +1 atk for charging.  Enemy models in close combat suffer -1 LD, Codex p.14",0,1,15,,"Necron Lord",,,,,,,,,,,,,,,,
+"Lightning Field","S3 AP- hit to enemy per wound inflicted on this unit in close combat, Codex p.14",0,1,25,,"Necron Lord",,,,,,,,,,,,,,,,
+"Nightmare Shroud","Enemies within 12 inches must morale check as if taken 25% casualties, Codex p.14",0,1,30,,"Necron Lord",,,,,,,,,,,,,,,,
+"Phase Shifter","4+ Invulnerable save, Codex p.14",0,1,30,,"Necron Lord",,,,,,,,,,,,,,,,
+"Phylactery","Self repair: 1-3: fail, 4: 1W, 5: 2W, 6: 3W, Codex p.14",0,1,15,,"Necron Lord",,,,,,,,,,,,,,,,
+"Ressurrection Orb","Necrons within 6 inches may self repair despite instant kill or power weapons, Codex p.14",0,1,40,,"Necron Lord",,,,,,,,,,,,,,,,
+"Solar Pulse","Night fight does not apply for 1 turn.  If it is not night, night fight applies to any unit firing at lord for 1 turn, Codex p.14",0,1,20,,"Necron Lord",,,,,,,,,,,,,,,,
+"Veil of Darkness","Lord and 1 unit of Necrons within 6 inches may deep strike instead of movement, may be used to escape close combat. Codex p.14",0,1,60,,"Necron Lord",,,,,,,,,,,,,,,,
+"Disruption Field","Any hit while assaulting a vehicle will glance on 6 regardless of armor, Codex p.14",0,1,,2,"Immortals",,,,,,,,,,,,,,,,
+"Disruption Field","Any hit while assaulting a vehicle will glance on 6 regardless of armor, Codex p.14",0,1,,2,"Warriors",,,,,,,,,,,,,,,,
+"Disruption Field","Any hit while assaulting a vehicle will glance on 6 regardless of armor, Codex p.14",0,1,,4,"Scarabs",,,,,,,,,,,,,,,,
+"Disruption Field","Any hit while assaulting a vehicle will glance on 6 regardless of armor, Codex p.14",0,1,,3,"Flayed Ones",,,,,,,,,,,,,,,,
+"Particle Projector","Codex p.20",0,1,,,"Tomb Spyder",,,,,,,-1,,,,,,12,5,3,"Assault 3"
+"Gauss Flux Arc","Codex p.21",1,1,,,"Monolith",,,,,,,,,,,,,12,5,4,"Heavy D6 per target"
+"Particle Whip","Codex p.21",1,1,,,"Monolith",,,,,,,,,,,,,24,9,3,"Ord. 1/Blast"
+"Lightning Arc","Codex p.29",1,1,,,"The Nightbringer",,,,,,,,,,,,,24,9,2,"Assault 1"
+"Gaze of Death","Codex p.29",1,1,,,"The Nightbringer",,,,,,,,,,,,,,,,
+"Etheric Tempest","Codex p.29",1,1,,,"The Nightbringer",,,,,,,,,,,,,,,,
+"Deceive","Codex p.30",1,1,,,"The Deceiver",,,,,,,,,,,,,,,,
+"Grand Illusion","Codex p.30",1,1,,,"The Deceiver",,,,,,,,,,,,,,,,
+"Dread","Codex p.30",1,1,,,"The Deceiver",,,,,,,,,,,,,,,,
+"Misdirect","Codex p.30",1,1,,,"The Deceiver",,,,,,,,,,,,,,,,
