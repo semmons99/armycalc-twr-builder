@@ -1,4 +1,5 @@
 require 'archive/tar/minitar'
+require 'yaml'
 include Archive::Tar
 
 # setup constants and create twr directory
