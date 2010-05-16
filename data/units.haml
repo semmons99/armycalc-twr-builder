@@ -19,6 +19,7 @@
             %value= unit[attr]
       %baseCost= unit['baseCost']
       %costPerUnit= unit['costPer']
+      %thumbnail= unit['thumbnail']
       - bonuses.select{|o| o['owner'] == unit['name']}.each do |bonus|
         %bonus{ :minCount => bonus['min'], :maxCount => bonus['max'] }
           %uid= "#{cfg['ruleset']}-#{cfg['name']}-#{unit['name']}-#{bonus['name']}".gsub(/ /, '-')

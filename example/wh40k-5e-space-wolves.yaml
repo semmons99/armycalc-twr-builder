@@ -6,3 +6,4 @@ defaultArmyName: Sons of Russ
 units: wh40k-5e-space-wolves-units.csv
 bonuses: wh40k-5e-space-wolves-bonuses.csv
 attrs: WS BS S T W I A LD SV FA SA RA
+media: media
