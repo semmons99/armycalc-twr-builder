@@ -36,8 +36,8 @@
                   %name= attr
                   %value= bonus[attr]
           - if bonuses.select{|o| o['owner'] == "#{unit['name']}/#{bonus['name']}"}.length > 0
-            %bonuses{ :minCount => 1, :maxCount => bonus['max'], :uid => "#{cfg['ruleset']}-#{cfg['name']}-#{unit['name']}-#{bonus['name']}-childern".gsub(/ /, '-') }
-              %uid= "#{cfg['ruleset']}-#{cfg['name']}-#{unit['name']}-#{bonus['name']}-childern".gsub(/ /, '-')
+            %bonuses{ :minCount => 1, :maxCount => bonus['max'], :uid => "#{cfg['ruleset']}-#{cfg['name']}-#{unit['name']}-#{bonus['name']}-children".gsub(/ /, '-') }
+              %uid= "#{cfg['ruleset']}-#{cfg['name']}-#{unit['name']}-#{bonus['name']}-children".gsub(/ /, '-')
               %name= ""
               - bonuses.select{|o| o['owner'] == "#{unit['name']}/#{bonus['name']}"}.each do |child|
                 %bonus{ :minCount => child['min'], :maxCount => child['max'] }
