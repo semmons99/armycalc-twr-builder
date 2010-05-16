@@ -2,11 +2,21 @@
 
 This library is used to build TWR files for use with ArmyCalc
 
+== Requirements
+
+This program requires Ruby and the following gems:
+  haml
+  archive-tar-minitar
+  fastercsv
+
+Ruby needs to be run with the -rubygems argument, add RUBYOPT=-rubygems to your environment to do this.
+set RUBYOPT=-rubygems; export RUBYOPT
+
 == Usage
 
 There are two 'rake' commands you can use
- rake generate config=
- rake build config=
+ rake generate CONFIG=
+ rake build CONFIG=
 
 The first creates the necessary XML files based on the data provided in the
 specified config file.
