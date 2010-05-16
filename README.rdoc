@@ -23,9 +23,8 @@ specified config file.
 
 The second runs generate and then packs the resulting files into a TWR file.
 
-The following commands can be used to cleanup generated files.
+The following command can be used to clean up temporary files.
  rake clean
- rake clobber
 
 == Config File Layout
 
@@ -34,7 +33,7 @@ The config file is a standard YAML file; below is an example.
  ---
  ruleset: Sample Ruleset
  name: Sample Army
- author: Shane Emmons (semmons99@gmail.com)
+ author:  U R Namehere (you@example.com)
  defaultArmyName: My Army
  units: units.csv
  bonuses: bonuses.csv
@@ -53,8 +52,7 @@ The config file is a standard YAML file; below is an example.
 
 'bonuses' is the name and relative location of the bonuses CSV.
 
-'attrs' are the valid attributes a unit can have (space separated). Examples
-"WS BS S T W I A LD SV FA SA RA". This should be included in both the CSVs.
+'attrs' is a space separated list of the attributes to display in the unit's stat line in ArmyCalc. This should be included in both the CSVs.
 
 'media' is the relative location to look for thumbnail unit image files.
 
@@ -85,6 +83,8 @@ a column for each item in the 'attrs' list in the config file.
 
 'attrs' can be left blank when they do not apply to a unit.
 
+Additional columns may be included of attributes you wish a unit to have that will not be displayed on the stat line.
+
 === Bonuses CSV
 
 The following columns are required in the bonuses CSV. You also need to include
@@ -111,6 +111,8 @@ The other possibility is the bonus is owned by another bonus, in which case the
 owner is "unit name/bonus name" for example "Blood Claw Pack/Transport".
 
 'attrs' can be left blank when they do not apply to a bonus.
+
+Additional columns may be included of attributes you wish a unit to have that will not be displayed on the stat line.
 
 == Resources
 
