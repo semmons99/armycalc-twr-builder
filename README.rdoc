@@ -10,7 +10,7 @@ This program requires Ruby and the following gems:
   fastercsv
 
 Ruby needs to be run with the -rubygems argument, add RUBYOPT=-rubygems to your environment to do this.
-set RUBYOPT=-rubygems; export RUBYOPT
+  set RUBYOPT=-rubygems; export RUBYOPT
 
 == Usage
 
