@@ -35,3 +35,11 @@ xml  = Haml::Engine.new(haml).render(Object.new,
                                      :units => units,
                                      :bonuses => bonuses)
 File.open(File.join(TMP_DIR, "units.xml"), "w").write(xml)
+
+# copy media directory to tmp
+require 'fileutils'
+include FileUtils
+
+if File.exist?(File.join(CFG_DIR, cfg["media"]))
+  cp_r(File.join(CFG_DIR, cfg["media"]), TMP_DIR)
+end

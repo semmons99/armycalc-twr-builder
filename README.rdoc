@@ -39,6 +39,7 @@ The config file is a standard YAML file; below is an example.
  units: units.csv
  bonuses: bonuses.csv
  attrs: dexterity strength agility life
+ media: media
 
 'ruleset' is the unique name of your rule system. Example 'WH40K 5E' 'WFB 7E'
 
@@ -53,16 +54,18 @@ The config file is a standard YAML file; below is an example.
 'bonuses' is the name and relative location of the bonuses CSV.
 
 'attrs' are the valid attributes a unit can have (space separated). Examples
-"WS BS S T W I A LD SV FA SA RA". This should be mirrored in the CSVs.
+"WS BS S T W I A LD SV FA SA RA". This should be included in both the CSVs.
+
+'media' is the relative location to look for thumbnail unit image files.
 
 == CSV Layout
 
 === Units CSV
 
 The following columns are required in the units CSV. You also need to include
-'attrs' from the config file.
+a column for each item in the 'attrs' list in the config file.
 
- name,description,category,min,max,baseCost,costPer
+ name,description,category,min,max,baseCost,costPer,thumbnail
 
 'name' is the unique name of the unit. Examples 'Blood Claw Pack' 'Cannon'
 
@@ -77,6 +80,8 @@ The following columns are required in the units CSV. You also need to include
 'baseCost' is the base cost of the unit when taken if applicable.
 
 'costPer' is the cost per model when the unit is taken if applicable.
+
+'thumbnail' is the file name (case sensitive) of a picture that represents the unit. This file should be located in the folder named in 'media' in the config file.
 
 'attrs' can be left blank when they do not apply to a unit.
 
@@ -96,9 +101,9 @@ Examples 'Power Sword' 'Amulet of Power'
 
 'max' is the maximum number allowed when a bonus is taken.
 
-'baseCost' is the base cost of the unit when taken if applicable.
+'baseCost' is the base cost of the bonus when taken if applicable.
 
-'costPer' is the cost per model when the unit is taken if applicable.
+'costPer' is the cost per model when the bonus is taken if applicable.
 
 'owner' is the owner of the bonus. There are two possibilities here, the bonus
 can either be owned by unit, in which place the owner is the name of the unit.
