@@ -33,16 +33,20 @@ The config file is a standard YAML file; below is an example.
  ---
  ruleset: Sample Ruleset
  name: Sample Army
+ revision: 1
  author:  U R Namehere (you@example.com)
  defaultArmyName: My Army
  units: units.csv
  bonuses: bonuses.csv
+ validator: validator.lua
  attrs: dexterity strength agility life
  media: media
 
 'ruleset' is the unique name of your rule system. Example 'WH40K 5E' 'WFB 7E'
 
 'name' is the name of the army. Examples 'Space Wolves' 'Dwarves'
+
+'revision' is the revision number of the rule system.  Increment this each time you change the files so that ArmyCalc can differentiate between versions of your file.
 
 'author' is optional.
 
@@ -51,6 +55,8 @@ The config file is a standard YAML file; below is an example.
 'units' is the name and relative location of the units CSV.
 
 'bonuses' is the name and relative location of the bonuses CSV.
+
+'validator' is the file name and relative location of the lua code file that implements the validation rules for your army.
 
 'attrs' is a space separated list of the attributes to display in the unit's stat line in ArmyCalc. This should be included in both the CSVs.
 
