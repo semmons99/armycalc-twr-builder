@@ -7,4 +7,5 @@ units: sample-army-units.csv
 bonuses: sample-army-bonuses.csv
 validator: validator.lua
 attrs: dexterity strength agility life
+hiddenattrs: field1 field2
 media: media

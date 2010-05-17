@@ -40,6 +40,7 @@ The config file is a standard YAML file; below is an example.
  bonuses: bonuses.csv
  validator: validator.lua
  attrs: dexterity strength agility life
+ hiddenattrs: field1 field2
  media: media
 
 'ruleset' is the unique name of your rule system. Example 'WH40K 5E' 'WFB 7E'
@@ -58,7 +59,9 @@ The config file is a standard YAML file; below is an example.
 
 'validator' is the file name and relative location of the lua code file that implements the validation rules for your army.
 
-'attrs' is a space separated list of the attributes to display in the unit's stat line in ArmyCalc. This should be included in both the CSVs.
+'attrs' is a space separated list of the attributes to display in the unit's stat line in ArmyCalc. These fields should be included in both CSVs.
+
+'hiddenattrs' is a space separated list of the attributes to include in unit stats that will NOT be displayed in the stat line in ArmyCalc.  These fields should be included in both CSVs.
 
 'media' is the relative location to look for thumbnail unit image files.
 
@@ -87,9 +90,8 @@ a column for each item in the 'attrs' list in the config file.
 
 'thumbnail' is the file name (case sensitive) of a picture that represents the unit. This file should be located in the folder named in 'media' in the config file.
 
-'attrs' can be left blank when they do not apply to a unit.
+'attrs' and 'hiddenattrs' can be left blank when they do not apply to a unit.
 
-Additional columns may be included of attributes you wish a unit to have that will not be displayed on the stat line.
 
 === Bonuses CSV
 
@@ -116,9 +118,8 @@ can either be owned by unit, in which place the owner is the name of the unit.
 The other possibility is the bonus is owned by another bonus, in which case the
 owner is "unit name/bonus name" for example "Blood Claw Pack/Transport".
 
-'attrs' can be left blank when they do not apply to a bonus.
+'attrs' and 'hiddenattrs' can be left blank when they do not apply to a unit.
 
-Additional columns may be included of attributes you wish a unit to have that will not be displayed on the stat line.
 
 == Resources
 

@@ -17,6 +17,11 @@
           %field
             %name= attr
             %value= unit[attr]
+        - cfg['hiddenattrs'].split(' ').each do |attr|
+          - next unless unit[attr]
+          %field
+            %name= attr
+            %value= unit[attr]
       %baseCost= unit['baseCost']
       %costPerUnit= unit['costPer']
       %thumbnail= unit['thumbnail']
