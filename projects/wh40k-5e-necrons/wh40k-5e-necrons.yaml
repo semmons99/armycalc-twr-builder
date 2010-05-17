@@ -1,6 +1,7 @@
 ---
 ruleset: WH40K 5E
-name: Necrons v8
+name: Necrons
+version: 10
 author: John OConnell (john.oconnell@gmail.com)
 defaultArmyName: Berien Necropolis
 units: wh40k-5e-necrons-units.csv

@@ -1,14 +1,14 @@
-"name","description","category","min","max","baseCost","costPer","thumbnail","WS","BS","S","T","W","I","A","LD","SV","FA","SA","RA","range","St","AP","type"
-"Necron Lord","Necron, Character, Codex p.16","HQ",1,1,100,,"necron_lord.jpg",4,4,5,5,3,4,3,10,3,,,,,,,
-"The Nightbringer","Monstrous Creature, Immune to Natural Law, Necrodermis, Drain Life, Manifestation, Above All Others, Fearless, Character, Codex p.29","Special",1,1,360,,,6,4,10,8,5,4,5,10,"4+i",,,,,,,
-"The Deceiver","Monstrous Creature, Immune to Natural Law, Necrodermis, Drain Life, Manifestation, Above All Others, Fearless, Character, Codex p.30","Special",1,1,300,,,5,3,9,8,5,5,4,10,"4+i",,,,,,,
-"Pariahs","Soulless, Psychic Abomination, Fearless, Codex p.17","Elite",4,10,,36,,4,4,5,5,1,3,1,10,3,,,,24,5,4,"Assault 2"
-"Immortals","Necron, Codex p.17","Elite",5,10,,28,,4,4,4,5,1,2,1,10,3,,,,24,5,4,"Assault 2"
-"Flayed Ones","Necron, Infiltrators, Deep Strike, Move Through Cover, Terrifying Visage, Codex p.17","Elite",4,10,,18,,4,4,4,4,1,4,2,10,3,,,,,,,
-"Warriors","Necron, Reserves, Codex p.18","Troops",10,20,,18,,4,4,4,4,1,2,1,10,3,,,,24,4,5,"Rapid Fire"
-"Wraiths","Necron, Phase Shift, Wraithflight, Codex p.19","Fast",1,3,,41,,4,4,6,4,1,6,3,10,"3+i",,,,,,,
-"Destroyers","Necron, Jetbikes, Codex p.19","Fast",3,5,,50,,4,4,4,5,1,2,1,10,3,,,,36,6,4,"Heavy 3"
-"Scarabs","Fearless, Deep Strike, Swarms, Vulnerable to Blasts, Small Target, Codex p.19","Fast",3,10,,12,,2,0,3,3,3,2,3,10,5,,,,,,,
-"Tomb Spyders","Hover, Monstrous Creature, Fearless, Artificer, Codex p.20","Heavy",1,3,,55,,2,2,6,6,2,2,3,10,3,,,,,,,
-"Heavy Destroyers","Necron, Jetbikes, Codex p.20","Heavy",1,3,,65,,4,4,4,5,1,2,1,10,3,,,,36,9,2,"Heavy 1"
-"Monolith","Living Metal, Ponderous, Deep Strike, Gauss Flux Arc, Power Matrix, Codex p.21","Heavy",1,1,235,,"monolith.jpg",,4,,,,,,,,14,14,14,,,,
+"name","description","category","min","max","baseCost","costPer","thumbnail","WS","BS","S","T","W","I","A","LD","SV","FA","SA","RA","range","St","AP","type","lpa","cat"
+"Necron Lord","Necron, Character, Codex p.16","HQ",1,1,,100,"necron_lord.jpg",4,4,5,5,3,4,3,10,3,,,,,,,,,"HQ"
+"The Nightbringer","Monstrous Creature, Immune to Natural Law, Necrodermis, Drain Life, Manifestation, Above All Others, Fearless, Character, Codex p.29","Special",1,1,,360,,6,4,10,8,5,4,5,10,"4+i",,,,,,,,1,"Special"
+"The Deceiver","Monstrous Creature, Immune to Natural Law, Necrodermis, Drain Life, Manifestation, Above All Others, Fearless, Character, Codex p.30","Special",1,1,,300,,5,3,9,8,5,5,4,10,"4+i",,,,,,,,1,"Special"
+"Pariahs","Soulless, Psychic Abomination, Fearless, Codex p.17","Elite",4,10,,36,,4,4,5,5,1,3,1,10,3,,,,24,5,4,"Assault 2",1,"Elite"
+"Immortals","Necron, Codex p.17","Elite",5,10,,28,,4,4,4,5,1,2,1,10,3,,,,24,5,4,"Assault 2",,"Elite"
+"Flayed Ones","Necron, Infiltrators, Deep Strike, Move Through Cover, Terrifying Visage, Codex p.17","Elite",4,10,,18,,4,4,4,4,1,4,2,10,3,,,,,,,,,"Elite"
+"Warriors","Necron, Reserves, Codex p.18","Troops",10,20,,18,,4,4,4,4,1,2,1,10,3,,,,24,4,5,"Rapid Fire",,"Troops"
+"Wraiths","Necron, Phase Shift, Wraithflight, Codex p.19","Fast",1,3,,41,,4,4,6,4,1,6,3,10,"3+i",,,,,,,,,"Fast"
+"Destroyers","Necron, Jetbikes, Codex p.19","Fast",3,5,,50,,4,4,4,5,1,2,1,10,3,,,,36,6,4,"Heavy 3",,"Fast"
+"Scarabs","Fearless, Deep Strike, Swarms, Vulnerable to Blasts, Small Target, Codex p.19","Fast",3,10,,12,,2,0,3,3,3,2,3,10,5,,,,,,,,,"Fast"
+"Tomb Spyders","Hover, Monstrous Creature, Fearless, Artificer, Codex p.20","Heavy",1,3,,55,,2,2,6,6,2,2,3,10,3,,,,,,,,,"Heavy"
+"Heavy Destroyers","Necron, Jetbikes, Codex p.20","Heavy",1,3,,65,,4,4,4,5,1,2,1,10,3,,,,36,9,2,"Heavy 1",,"Heavy"
+"Monolith","Living Metal, Ponderous, Deep Strike, Gauss Flux Arc, Power Matrix, Codex p.21","Heavy",1,1,,235,"monolith.jpg",,4,,,,,,,,14,14,14,,,,,,"Heavy"
