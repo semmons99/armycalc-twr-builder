@@ -8,12 +8,14 @@ function countWargearCost(item)
 end
 
 for i,unit in twArmy:units() do
+  -- Check for too much wargear on Lord(s)
   if unit.name == "Necron Lord" then
     local a = countWargearCost(unit);  
     if a > 100 then
       twError("Necron lord may only have 100 points of wargear.");
     end
-  twNotice(a);
   end
+  -- Check One-per-army restrictions on wargear
+  -- Check One-per-army restrictions on units
+  -- Check Force Organisation compliance
 end
-

@@ -1,11 +1,12 @@
 ---
 ruleset: WH40K 5E
 name: Necrons
-revision: 10
+revision: 11
 author: John OConnell (john.oconnell@gmail.com)
 defaultArmyName: Berien Necropolis
 units: wh40k-5e-necrons-units.csv
 bonuses: wh40k-5e-necrons-bonuses.csv
 validator: validator.lua
 attrs: WS BS S T W I A LD SV FA SA RA Range St AP Type
+hiddenattrs: lpa cat mx
 media: media
