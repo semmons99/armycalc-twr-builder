@@ -43,3 +43,10 @@ include FileUtils
 if File.exist?(File.join(CFG_DIR, cfg["media"]))
   cp_r(File.join(CFG_DIR, cfg["media"]), TMP_DIR)
 end
+
+# copy validator to tmp
+
+if File.exist?(File.join(CFG_DIR, cfg["validator"]))
+  cp(File.join(CFG_DIR, cfg["validator"]), TMP_DIR)
+end
+
